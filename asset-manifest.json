@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/DmytroDemianenko/goit-react-hw-04-hooks-images.git/static/css/main.7acaea2f.css",
-    "main.js": "/DmytroDemianenko/goit-react-hw-04-hooks-images.git/static/js/main.5eec73e6.js",
-    "static/js/787.ad1a6a41.chunk.js": "/DmytroDemianenko/goit-react-hw-04-hooks-images.git/static/js/787.ad1a6a41.chunk.js",
-    "index.html": "/DmytroDemianenko/goit-react-hw-04-hooks-images.git/index.html",
-    "main.7acaea2f.css.map": "/DmytroDemianenko/goit-react-hw-04-hooks-images.git/static/css/main.7acaea2f.css.map",
-    "main.5eec73e6.js.map": "/DmytroDemianenko/goit-react-hw-04-hooks-images.git/static/js/main.5eec73e6.js.map",
-    "787.ad1a6a41.chunk.js.map": "/DmytroDemianenko/goit-react-hw-04-hooks-images.git/static/js/787.ad1a6a41.chunk.js.map"
+    "main.css": "/DmytroDemianenko/goit-react-hw-04-hooks-images/static/css/main.7acaea2f.css",
+    "main.js": "/DmytroDemianenko/goit-react-hw-04-hooks-images/static/js/main.b90a0f52.js",
+    "static/js/787.ad1a6a41.chunk.js": "/DmytroDemianenko/goit-react-hw-04-hooks-images/static/js/787.ad1a6a41.chunk.js",
+    "index.html": "/DmytroDemianenko/goit-react-hw-04-hooks-images/index.html",
+    "main.7acaea2f.css.map": "/DmytroDemianenko/goit-react-hw-04-hooks-images/static/css/main.7acaea2f.css.map",
+    "main.b90a0f52.js.map": "/DmytroDemianenko/goit-react-hw-04-hooks-images/static/js/main.b90a0f52.js.map",
+    "787.ad1a6a41.chunk.js.map": "/DmytroDemianenko/goit-react-hw-04-hooks-images/static/js/787.ad1a6a41.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.5eec73e6.js"
+    "static/js/main.b90a0f52.js"
   ]
 }
