@@ -6,12 +6,7 @@ import ImageGallery from './components/ImageGallery/ImageGallery';
 import Modal from './components/Modal/Modal';
 
 export default function App() {
-  // const Status = {
-  //   IDLE: 'idle',
-  //   PENDING: 'pending',
-  //   RESOLVED: 'resolved',
-  //   REJECTED: 'rejected',
-  // };
+
   const [imageName, setImageName] = useState('');
   const [showModal, setShowModal] = useState(false);
   const [largeImageURL, setLargeImageURL] = useState('');
@@ -30,12 +25,12 @@ export default function App() {
       setStatus('pending');
       searchImage();
     }
-    // if (page !== setPage) {
-    //   window.scrollTo({
-    //     top: document.documentElement.scrollHeight,
-    //     behavior: 'smooth',
-    //   });
-    // }
+    if (page !== setPage) {
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: 'smooth',
+      });
+    }
   }, [imageName]);
   useEffect(() => {
     window.scrollTo({

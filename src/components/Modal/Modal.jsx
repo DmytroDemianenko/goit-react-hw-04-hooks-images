@@ -4,32 +4,35 @@ import { Overlay, ImageHolder } from './Modal.styled';
 
 const modalRoot = document.querySelector('#modal-root');
 
-export default function Modal({ children, closeModal }) {
-  useEffect(() => {
-    window.addEventListener('keydown', e => {
-      if (e.code === 'Escape') {
-        closeModal();
-      }
-    });
-    return () => {
-      window.removeEventListener('keydown', e => {
-        if (e.code === 'Escape') {
-        }
-      });
-    };
-  }, []);
+ function Modal({ src, alt, children, closeModal }) {
+   const handleKeyDown = e => {
+     if (e.code === 'Escape') {
+       closeModal();
+     }
+   };
 
-  const handleBackdropClick = e => {
-    e.preventDefault();
-    if (e.currentTarget === e.target) {
-      closeModal();
-    }
-  };
+   useEffect(() => {
+     window.addEventListener('keydown', handleKeyDown);
+     return () => {
+       window.removeEventListener('keydown', handleKeyDown);
+     };
+   });
 
-  return createPortal(
-    <Overlay onClick={handleBackdropClick}>
-      <ImageHolder>{children}</ImageHolder>
-    </Overlay>,
-    modalRoot
-  );
-}
+   const handleBackdropClick = e => {
+     e.preventDefault();
+     if (e.currentTarget === e.target) {
+       closeModal();
+     }
+   };
+
+   return createPortal(
+     <Overlay onClick={handleBackdropClick}>
+       {children}
+       <ImageHolder>
+         <img src={src} alt={alt} />
+       </ImageHolder>
+     </Overlay>,
+     modalRoot
+   );
+ }
+ export default Modal;
